@@ -54,3 +54,28 @@ helm install my-monkey kubemonkey -n kube-monkey -f ~/my-monkey.yaml
 ```bash
 kubectl -n kube-monkey rollout status deployment my-monkey-kube-monkey
 ```
+
+### see logs
+```bash
+kubectl logs -f deployment.apps/my-monkey-kube-monkey -n kube-monkey
+```
+```bash
+kubectl logs -f deployment.apps/<app-name> -n <namespace-name>
+```
+
+# demo purpose
+
+### create nginx yaml file
+```bash
+kubectl apply -f nginx.yaml
+```
+
+### add more pods: create a namespace called more-apps
+```bash
+kubectl create namespace more-apps
+```
+```bash
+kubectl apply --namespace more-apps -f ghost.yaml
+```
+kube-monkey enabled from nginx.yaml  
+![image](https://github.com/hatmahat/kube-monkey/assets/56577748/d7a207e0-0e94-4cf7-a4bc-5aed8e623db5)
