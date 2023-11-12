@@ -79,3 +79,5 @@ kubectl apply --namespace more-apps -f ghost.yaml
 ```
 kube-monkey enabled from nginx.yaml  
 ![image](https://github.com/hatmahat/kube-monkey/assets/56577748/d7a207e0-0e94-4cf7-a4bc-5aed8e623db5)
+
+[reference](https://www.youtube.com/watch?v=ic4k-FkYU44&t=118s&ab_channel=TechnologyFirst)
