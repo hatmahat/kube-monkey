@@ -1,1 +1,2 @@
 # kube-monkey
+kube monkey is an implementation of netflix chaos monkey and it's specially built for kubernetes clusters. So, kube-monkey periodically schedules a list of pod termination events and by terminating the pods it's very useful for us to test the fault tolerance of your highly available system and the pod termination is one of the chaos engineering experiment that run on kubernetes to make sure the replica set is working on and your application is not facing any downtime.
